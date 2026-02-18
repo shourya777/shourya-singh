@@ -3,15 +3,25 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Shourya | Data Analyst</title>
-  <meta name="description" content="Shourya — Data Analyst. SQL, Python, Power BI. Portfolio projects and CV for recruitment." />
+  <title>Shourya Singh | Data Engineer</title>
+  <meta name="description" content="Shourya Singh — Data Engineer. SQL, Python, Cloud Data Warehousing. Portfolio + CV." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" id="top">
     <nav class="nav">
-      <a class="logo" href="#top">Shourya</a>
+      <!-- Left: photo + name -->
+      <div class="brand">
+        <!-- Put your photo file in the repo as: profile.jpg (or change the filename here) -->
+        <img class="avatar" src="profile.jpg" alt="Shourya Singh" />
+        <div class="brand-text">
+          <a class="logo" href="#top">Shourya Singh</a>
+          <div class="role">Data Engineer</div>
+        </div>
+      </div>
+
+      <!-- Right: nav -->
       <div class="nav-links">
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
@@ -22,39 +32,48 @@
     </nav>
   </header>
 
-  <main id="top" class="main">
+  <main class="main">
     <!-- HERO -->
     <section class="hero">
       <div class="hero-left">
-        <p class="kicker">Data Analyst · London</p>
-        <h1>Turning messy data into decisions.</h1>
+        <div class="badge">Available for Data Engineer / Analytics Engineer roles</div>
+        <h1>Building reliable data products that stakeholders trust.</h1>
         <p class="subhead">
-          I build analytics and pipelines using <strong>SQL</strong>, <strong>Python</strong>, and <strong>BI</strong>.
-          Currently working in the public sector; transitioning toward <strong>data engineering / higher-impact analytics</strong>.
+          I design and ship <strong>ETL/ELT pipelines</strong>, <strong>data models</strong>, and <strong>reporting layers</strong>
+          using <strong>SQL</strong>, <strong>Python</strong>, and <strong>cloud warehouses</strong>.
+          I focus on quality (tests/validation), observability, and clear documentation.
         </p>
 
         <div class="cta-row">
-          <a class="btn primary" href="#portfolio">View projects</a>
+          <a class="btn primary" href="#portfolio">View portfolio</a>
+          <!-- Ensure you have a file named cv.pdf in the repo root -->
           <a class="btn" href="cv.pdf" target="_blank" rel="noopener">Download CV (PDF)</a>
         </div>
 
         <div class="links-row">
-          <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+          <!-- Replace with your real URLs -->
+          <a href="https://www.linkedin.com/in/YOUR-HANDLE/" target="_blank" rel="noopener">LinkedIn</a>
           <span class="dot">•</span>
-          <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://github.com/YOUR-HANDLE" target="_blank" rel="noopener">GitHub</a>
           <span class="dot">•</span>
-          <a href="mailto:your.email@example.com">your.email@example.com</a>
+          <a href="mailto:YOUR.EMAIL@EXAMPLE.COM">YOUR.EMAIL@EXAMPLE.COM</a>
         </div>
       </div>
 
       <div class="hero-right">
-        <div class="card">
-          <h3>Quick highlights</h3>
+        <div class="card emphasis">
+          <h3>Impact snapshot</h3>
           <ul>
-            <li><strong>SQL + BI</strong>: stakeholder dashboards & reporting automation</li>
-            <li><strong>Python ETL</strong>: ingestion, cleaning, validation, scheduling</li>
-            <li><strong>Cloud</strong>: BigQuery + warehouse fundamentals</li>
+            <li><strong>Pipeline automation</strong> to reduce manual reporting effort</li>
+            <li><strong>Data validation</strong> (schema + uniqueness + freshness) to improve trust</li>
+            <li><strong>Warehouse-first</strong> modelling for consistent KPIs and BI performance</li>
           </ul>
+          <div class="mini">
+            <span class="pill">SQL</span>
+            <span class="pill">Python</span>
+            <span class="pill">BigQuery</span>
+            <span class="pill">Power BI</span>
+          </div>
         </div>
       </div>
     </section>
@@ -64,12 +83,12 @@
       <h2>About</h2>
       <div class="grid-2">
         <p>
-          I’m a data analyst with ~3+ years across public sector and other domains.
-          I enjoy building reliable reporting, clean datasets, and “single source of truth” pipelines.
+          I’m a Data Engineer focused on building dependable data pipelines and analytics foundations:
+          ingestion, transformation, modelling, and delivery to BI and stakeholders.
         </p>
         <p>
-          Right now I’m focusing on strengthening data engineering skills (modelling, orchestration, testing, documentation),
-          while continuing to deliver commercial-impact analysis.
+          I’m comfortable working end-to-end: clarifying requirements, implementing pipelines, validating outputs,
+          and shipping production-ready documentation so teams can confidently reuse the work.
         </p>
       </div>
     </section>
@@ -78,65 +97,65 @@
     <section id="skills" class="section">
       <h2>Skills</h2>
       <div class="chips">
-        <span class="chip">SQL</span>
-        <span class="chip">Python (Pandas)</span>
-        <span class="chip">Power BI</span>
-        <span class="chip">BigQuery</span>
+        <span class="chip">SQL (CTEs, window functions)</span>
+        <span class="chip">Python (Pandas, automation)</span>
         <span class="chip">ETL/ELT</span>
         <span class="chip">Data Modelling</span>
-        <span class="chip">Automation</span>
-        <span class="chip">A/B Testing</span>
+        <span class="chip">Data Quality & Validation</span>
+        <span class="chip">BigQuery / Warehousing</span>
+        <span class="chip">Power BI</span>
+        <span class="chip">Documentation</span>
       </div>
     </section>
 
     <!-- PORTFOLIO -->
     <section id="portfolio" class="section">
       <h2>Portfolio</h2>
-      <p class="muted">Replace the project cards below with your real projects. Keep each to 5–8 lines.</p>
+      <p class="muted">Replace the links + tweak the wording — structure is already recruiter-friendly.</p>
 
       <div class="cards">
         <article class="card">
-          <h3>News Scanner for Supply Risk (Power BI + Python)</h3>
-          <p class="muted">Problem: Track disruption news and map impact across countries / suppliers.</p>
+          <h3>Supply Risk News Pipeline + BI (Python + Power BI)</h3>
+          <p class="muted">Ingestion → cleaning → enrichment → dashboard for monitoring disruption signals.</p>
           <ul>
-            <li>Built keyword-driven ingestion + transformations</li>
-            <li>Created interactive Power BI dashboard with geo mapping</li>
-            <li>Outcome: faster identification of potential supply risks</li>
+            <li>Built keyword-driven ingestion and normalization</li>
+            <li>Implemented mapping and drill-through analysis in BI</li>
+            <li>Shipped documented pipeline + refresh logic</li>
           </ul>
           <div class="card-links">
-            <a href="#" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://github.com/YOUR-HANDLE/REPO1" target="_blank" rel="noopener">GitHub</a>
             <span class="dot">•</span>
-            <a href="#" target="_blank" rel="noopener">Demo</a>
+            <a href="https://YOUR-DEMO-LINK-1" target="_blank" rel="noopener">Demo</a>
           </div>
-          <p class="tags">Python · Power BI · Data Cleaning · Mapping</p>
+          <p class="tags">Python · Power BI · Data Cleaning · Geo Mapping</p>
         </article>
 
         <article class="card">
-          <h3>Monthly CSV Validation + Reference Matching (Python ETL)</h3>
-          <p class="muted">Problem: Validate whether contract/project files exist and match unique references.</p>
+          <h3>CSV Contract/Project Validation Framework (Python)</h3>
+          <p class="muted">Validation suite for schema, uniqueness, missing IDs, and file freshness.</p>
           <ul>
-            <li>Built checks for schema, missing IDs, duplicates, and freshness</li>
-            <li>Generated audit outputs (failed rows + summary metrics)</li>
-            <li>Outcome: reduced manual checking and improved reliability</li>
+            <li>Checks: required columns, duplicates, referential consistency</li>
+            <li>Produces audit outputs (failed rows + summary metrics)</li>
+            <li>Designed to run on schedule with clear logs</li>
           </ul>
           <div class="card-links">
-            <a href="#" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://github.com/YOUR-HANDLE/REPO2" target="_blank" rel="noopener">GitHub</a>
           </div>
-          <p class="tags">Python · Pandas · Validation · ETL</p>
+          <p class="tags">Python · Validation · Logging · ETL</p>
         </article>
 
         <article class="card">
-          <h3>Warehouse Reporting Pack (BigQuery + SQL)</h3>
-          <p class="muted">Problem: Create consistent KPIs and reduce ad-hoc reporting time.</p>
+          <h3>Warehouse KPI Modelling (BigQuery + SQL)</h3>
+          <p class="muted">Reusable KPI layer with consistent definitions for reporting and analytics.</p>
           <ul>
-            <li>Designed SQL models for KPI definitions and reusable views</li>
-            <li>Optimized queries for performance and cost</li>
-            <li>Outcome: simpler reporting layer for BI</li>
+            <li>Designed performant models/views for BI consumption</li>
+            <li>Standardized KPI logic to reduce ad-hoc divergence</li>
+            <li>Optimized query patterns for speed and cost</li>
           </ul>
           <div class="card-links">
-            <a href="#" target="_blank" rel="noopener">Case study</a>
+            <a href="https://YOUR-CASE-STUDY-LINK" target="_blank" rel="noopener">Case study</a>
           </div>
-          <p class="tags">BigQuery · SQL · Modelling · KPI</p>
+          <p class="tags">BigQuery · SQL · Modelling · BI Layer</p>
         </article>
       </div>
     </section>
@@ -146,12 +165,9 @@
       <h2>CV</h2>
       <div class="cv-box">
         <p>
-          Download my CV as a PDF:
-          <a class="btn small" href="cv.pdf" target="_blank" rel="noopener">Download CV</a>
+          <a class="btn small primary" href="cv.pdf" target="_blank" rel="noopener">Download CV</a>
         </p>
-        <p class="muted">
-          Tip: keep the on-page summary aligned with your CV headline + the roles you’re applying for.
-        </p>
+        <p class="muted">Keep your CV updated — this link always points to the latest PDF in this repo.</p>
       </div>
     </section>
 
@@ -159,15 +175,15 @@
     <section id="contact" class="section">
       <h2>Contact</h2>
       <div class="contact">
-        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/" target="_blank" rel="noopener">linkedin.com/in/your-handle</a></p>
-        <p>GitHub: <a href="https://github.com/" target="_blank" rel="noopener">github.com/your-handle</a></p>
+        <p><strong>Email:</strong> <a href="mailto:YOUR.EMAIL@EXAMPLE.COM">YOUR.EMAIL@EXAMPLE.COM</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/YOUR-HANDLE/" target="_blank" rel="noopener">linkedin.com/in/YOUR-HANDLE</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/YOUR-HANDLE" target="_blank" rel="noopener">github.com/YOUR-HANDLE</a></p>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <p>© <span id="year"></span> Shourya · Built for recruiters</p>
+    <p>© <span id="year"></span> Shourya Singh · Built with clarity and care</p>
   </footer>
 
   <script>
