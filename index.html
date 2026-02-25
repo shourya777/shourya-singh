@@ -12,9 +12,9 @@
   <header class="header" id="top">
     <nav class="nav">
       <div class="brand">
-        <a href="profile.jpg" target="_blank">
-        <img class="avatar" src="profile.jpg" alt="Shourya Singh" />
-        </a>
+        <!-- Click to zoom (modal) -->
+        <img class="avatar" src="profile.jpg" alt="Shourya Singh" onclick="openModal()" style="cursor:pointer;" />
+
         <div class="brand-text">
           <a class="logo" href="#top">Shourya Singh</a>
           <div class="role">Data Engineer · London</div>
@@ -28,10 +28,12 @@
       <a class="btn primary" href="mailto:singhshr777@gmail.com">Email</a>
     </div>
   </nav>
-
-
-      
   </header>
+
+  <!-- Image Zoom Modal (click anywhere to close) -->
+  <div id="imgModal" class="modal" onclick="closeModal()">
+    <img class="modal-content" src="profile.jpg" alt="Shourya Singh" />
+  </div>
 
   <main class="main">
     
@@ -154,6 +156,13 @@
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
+
+    function openModal() {
+      document.getElementById("imgModal").classList.add("show");
+    }
+    function closeModal() {
+      document.getElementById("imgModal").classList.remove("show");
+    }
   </script>
 </body>
 </html>
