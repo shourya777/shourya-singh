@@ -4,150 +4,186 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Shourya Singh | Data Engineer</title>
-  <meta name="description" content="Shourya Singh — Data Engineer. SQL, Python, Cloud Warehousing. Governed, scalable data models and self-serve analytics." />
+  <meta name="description" content="Shourya Singh — Data Engineer. SQL, Python, Cloud Data Warehousing. Portfolio + CV." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
   <header class="header" id="top">
     <nav class="nav">
+      <!-- Left: photo + name -->
       <div class="brand">
+        <!-- Put your photo file in the repo as: profile.jpg (or change the filename here) -->
         <img class="avatar" src="profile.jpg" alt="Shourya Singh" />
         <div class="brand-text">
           <a class="logo" href="#top">Shourya Singh</a>
-          <div class="role">Data Engineer · London</div>
+          <div class="role">Data Engineer</div>
         </div>
       </div>
-      
-    <!-- Right side ribbon buttons -->
-    <div class="top-buttons">
-      <a class="btn primary" href="cv.pdf" target="_blank" rel="noopener">CV</a>
-      <a class="btn primary" href="https://www.linkedin.com/in/shouryasingh24/" target="_blank" rel="noopener">LinkedIn</a>
-      <a class="btn primary" href="mailto:singhshr777@gmail.com">Email</a>
-    </div>
-  </nav>
 
-
-      
+      <!-- Right: nav -->
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#cv">CV</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
   </header>
 
   <main class="main">
-    
-
-        <h1>Data Analytics Engineer</h1>
-
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-left">
+        <div class="badge">Available for Data Engineer / Analytics Engineer roles</div>
+        <h1>Building reliable data products that stakeholders trust.</h1>
         <p class="subhead">
-          With 4+ years of experience across data engineering and analytics across Public sector and NHS, I design and maintain
-          production-grade data models, transformation layers, and quality frameworks
-          across cloud data warehouses delivering analysis-ready datasets and scalable BI solutions.
+          I design and ship <strong>ETL/ELT pipelines</strong>, <strong>data models</strong>, and <strong>reporting layers</strong>
+          using <strong>SQL</strong>, <strong>Python</strong>, and <strong>cloud warehouses</strong>.
+          I focus on quality (tests/validation), observability, and clear documentation.
         </p>
 
-       <ul class="impact-list">
-  <li>Designed reusable warehouse models for a £1.2B commercial dataset, standardising KPIs across teams</li>
-  <li>Built semantic models in Microsoft Fabric / Power BI enabling governed self-serve analytics</li>
-  <li>Implemented data quality checks (schema, uniqueness, freshness) to improve reporting trust</li>
-  <li>Optimised BigQuery SQL transformations for scalable, cost-efficient analytics</li>
-      </ul>
+        <div class="cta-row">
+          <a class="btn primary" href="#portfolio">View portfolio</a>
+          <!-- Ensure you have a file named cv.pdf in the repo root -->
+          <a class="btn" href="cv.pdf" target="_blank" rel="noopener">Download CV (PDF)</a>
+        </div>
+
+        <div class="links-row">
+          <!-- Replace with your real URLs -->
+          <a href="https://www.linkedin.com/in/YOUR-HANDLE/" target="_blank" rel="noopener">LinkedIn</a>
+          <span class="dot">•</span>
+          <a href="https://github.com/YOUR-HANDLE" target="_blank" rel="noopener">GitHub</a>
+          <span class="dot">•</span>
+          <a href="mailto:YOUR.EMAIL@EXAMPLE.COM">YOUR.EMAIL@EXAMPLE.COM</a>
+        </div>
       </div>
 
       <div class="hero-right">
         <div class="card emphasis">
-          <h3>Core Focus</h3>
+          <h3>Impact snapshot</h3>
           <ul>
-            <li><strong>Data-Warehouse Architecture and Modelling</strong> Using scalable fact & dimension design</li>
-            <li><strong>Analytics-ready datasets</strong> Power BI self-serve reporting</li>
-            <li><strong>Data quality frameworks</strong> Validation and auditing</li>
-            <li><strong>Cloud-native SQL transformations</strong> Experience with GCP and AWS cloud environment</li>
+            <li><strong>Pipeline automation</strong> to reduce manual reporting effort</li>
+            <li><strong>Data validation</strong> (schema + uniqueness + freshness) to improve trust</li>
+            <li><strong>Warehouse-first</strong> modelling for consistent KPIs and BI performance</li>
           </ul>
           <div class="mini">
-            <span class="pill">Advance SQL</span>
+            <span class="pill">SQL</span>
             <span class="pill">Python</span>
-            <span class="pill">Power BI/ Tableau</span>
-            <span class="pill">Data Modelling and Architecture</span>
+            <span class="pill">BigQuery</span>
+            <span class="pill">Power BI</span>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h2>About</h2>
+      <div class="grid-2">
+        <p>
+          I’m a Data Engineer focused on building dependable data pipelines and analytics foundations:
+          ingestion, transformation, modelling, and delivery to BI and stakeholders.
+        </p>
+        <p>
+          I’m comfortable working end-to-end: clarifying requirements, implementing pipelines, validating outputs,
+          and shipping production-ready documentation so teams can confidently reuse the work.
+        </p>
       </div>
     </section>
 
     <!-- SKILLS -->
     <section id="skills" class="section">
-      <h2>Technical Expertise</h2>
+      <h2>Skills</h2>
       <div class="chips">
-        <span class="chip">Advanced SQL (CTEs, Window Functions, Optimisation)</span>
-        <span class="chip">Data Modelling (Star / Snowflake Schema)</span>
-        <span class="chip">ETL / ELT Design</span>
+        <span class="chip">SQL (CTEs, window functions)</span>
+        <span class="chip">Python (Pandas, automation)</span>
+        <span class="chip">ETL/ELT</span>
+        <span class="chip">Data Modelling</span>
         <span class="chip">Data Quality & Validation</span>
-        <span class="chip">Python (Pandas, Automation)</span>
-        <span class="chip">BigQuery (Cloud Warehouse)</span>
+        <span class="chip">BigQuery / Warehousing</span>
         <span class="chip">Power BI</span>
-        <span class="chip">Version Control (Git)</span>
-        <span class="chip">dbt (Modelling & Testing Workflows)</span>
+        <span class="chip">Documentation</span>
       </div>
     </section>
 
     <!-- PORTFOLIO -->
     <section id="portfolio" class="section">
-      <h2>Selected Work</h2>
+      <h2>Portfolio</h2>
+      <p class="muted">Replace the links + tweak the wording — structure is already recruiter-friendly.</p>
 
       <div class="cards">
         <article class="card">
-          <h3>Production Warehouse Modelling Layer (BigQuery + SQL)</h3>
-          <p class="muted">
-            Designed scalable, reusable data models to standardise KPI definitions
-            and enable consistent reporting across teams.
-          </p>
+          <h3>Supply Risk News Pipeline + BI (Python + Power BI)</h3>
+          <p class="muted">Ingestion → cleaning → enrichment → dashboard for monitoring disruption signals.</p>
           <ul>
-            <li>Modular transformation layers for clean fact & dimension modelling</li>
-            <li>Performance optimisation for large-scale warehouse queries</li>
-            <li>Validation checks to enforce consistency and governance</li>
+            <li>Built keyword-driven ingestion and normalization</li>
+            <li>Implemented mapping and drill-through analysis in BI</li>
+            <li>Shipped documented pipeline + refresh logic</li>
           </ul>
           <div class="card-links">
             <a href="https://github.com/YOUR-HANDLE/REPO1" target="_blank" rel="noopener">GitHub</a>
+            <span class="dot">•</span>
+            <a href="https://YOUR-DEMO-LINK-1" target="_blank" rel="noopener">Demo</a>
           </div>
-          <p class="tags">BigQuery · SQL · Modelling · Governance</p>
+          <p class="tags">Python · Power BI · Data Cleaning · Geo Mapping</p>
         </article>
 
         <article class="card">
-          <h3>Data Quality & Validation Framework (Python + SQL)</h3>
-          <p class="muted">
-            Automated detection of schema drift, duplicates, referential integrity
-            issues, and freshness failures.
-          </p>
+          <h3>CSV Contract/Project Validation Framework (Python)</h3>
+          <p class="muted">Validation suite for schema, uniqueness, missing IDs, and file freshness.</p>
           <ul>
-            <li>Automated validation checks across structured datasets</li>
-            <li>Audit logs for traceability and debugging</li>
-            <li>Reduced manual reconciliation through repeatable workflows</li>
+            <li>Checks: required columns, duplicates, referential consistency</li>
+            <li>Produces audit outputs (failed rows + summary metrics)</li>
+            <li>Designed to run on schedule with clear logs</li>
           </ul>
           <div class="card-links">
             <a href="https://github.com/YOUR-HANDLE/REPO2" target="_blank" rel="noopener">GitHub</a>
           </div>
-          <p class="tags">Python · Validation · ETL · Data Quality</p>
+          <p class="tags">Python · Validation · Logging · ETL</p>
         </article>
 
         <article class="card">
-          <h3>End-to-End Analytics Data Product</h3>
-          <p class="muted">
-            Built ingestion, transformation and modelling workflows producing
-            analysis-ready datasets powering BI dashboards.
-          </p>
+          <h3>Warehouse KPI Modelling (BigQuery + SQL)</h3>
+          <p class="muted">Reusable KPI layer with consistent definitions for reporting and analytics.</p>
           <ul>
-            <li>Translated open-ended stakeholder requirements into structured datasets</li>
-            <li>Created clean transformation layers for downstream BI use</li>
-            <li>Ensured reproducibility and documentation of workflows</li>
+            <li>Designed performant models/views for BI consumption</li>
+            <li>Standardized KPI logic to reduce ad-hoc divergence</li>
+            <li>Optimized query patterns for speed and cost</li>
           </ul>
           <div class="card-links">
-            <a href="https://github.com/YOUR-HANDLE/REPO3" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://YOUR-CASE-STUDY-LINK" target="_blank" rel="noopener">Case study</a>
           </div>
-          <p class="tags">Python · SQL · BI · Data Products</p>
+          <p class="tags">BigQuery · SQL · Modelling · BI Layer</p>
         </article>
       </div>
     </section>
 
+    <!-- CV -->
+    <section id="cv" class="section">
+      <h2>CV</h2>
+      <div class="cv-box">
+        <p>
+          <a class="btn small primary" href="cv.pdf" target="_blank" rel="noopener">Download CV</a>
+        </p>
+        <p class="muted">Keep your CV updated — this link always points to the latest PDF in this repo.</p>
+      </div>
+    </section>
 
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <div class="contact">
+        <p><strong>Email:</strong> <a href="mailto:YOUR.EMAIL@EXAMPLE.COM">YOUR.EMAIL@EXAMPLE.COM</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/YOUR-HANDLE/" target="_blank" rel="noopener">linkedin.com/in/YOUR-HANDLE</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/YOUR-HANDLE" target="_blank" rel="noopener">github.com/YOUR-HANDLE</a></p>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
-    <p>© <span id="year"></span> Shourya Singh · Data Engineering & Cloud Analytics</p>
+    <p>© <span id="year"></span> Shourya Singh · Built with clarity and care</p>
   </footer>
 
   <script>

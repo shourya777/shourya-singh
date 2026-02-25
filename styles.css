@@ -211,14 +211,9 @@ h1{
   box-shadow: 0 14px 28px rgba(109,40,217,0.10);
 }
 
-.btn.primary {
-  background: linear-gradient(
-    90deg,
-    rgba(147, 112, 219, 0.95),
-    rgba(186, 147, 255, 0.95),
-    rgba(221, 160, 255, 0.95)
-  );
-  color: #ffffff;
+.btn.primary{
+  background: linear-gradient(90deg, rgba(109,40,217,0.92), rgba(168,85,247,0.92), rgba(236,72,153,0.88));
+  color: #fff;
   border: 0;
 }
 
