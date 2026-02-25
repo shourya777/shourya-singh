@@ -55,9 +55,9 @@ a:hover{ text-decoration:underline; }
 }
 
 .avatar{
-  width: 60px;
-  height: 60px;
-  border-radius: 14px;
+  width: 150px;
+  height: 180px;
+  border-radius: 8px;
   object-fit: cover;
   border: 2px solid rgba(109,40,217,0.18);
   box-shadow: 0 8px 18px rgba(109,40,217,0.12);
